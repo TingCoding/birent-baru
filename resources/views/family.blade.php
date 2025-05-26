@@ -33,7 +33,9 @@
                             <div class="price-section">
                                 <div class="price">Rp {{ number_format($car->Price) }},- / day</div>
                                 <!-- Perbaikan: tambah data-car-id dan event handler -->
-                                <button class="rent-btn" data-car-id="{{ $car->id }}" onclick="chooseCar({{ $car->id }})">Choose</button>
+                                @if (Auth::user() && Auth::user()->role == 'user')
+                                    <button class="rent-btn" data-car-id="{{ $car->id }}" onclick="chooseCar({{ $car->id }})">Choose</button>
+                                @endif
                             </div>
                         </div>
                         
