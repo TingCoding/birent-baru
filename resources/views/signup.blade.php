@@ -16,8 +16,7 @@
         </div>
         <div class="nav-links">
             <a href="/">HOME</a>
-            <a href="/cars">CARS</a>
-            <a href="#" class="active">REGISTER</a>
+            <a href="#" class="active">LOGIN</a>
             <button class="sign-in-btn">SIGN IN</button>
         </div>
     </nav>

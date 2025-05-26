@@ -244,7 +244,7 @@ h1 {
         </div>
         <div class="nav-links">
             <a href="/dashboard">HOME</a>
-            <a href="#" class="active">CARS</a>
+            <a href="/cars">CARS</a>
         </div>
     </nav>
     

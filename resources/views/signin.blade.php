@@ -16,7 +16,6 @@
         </div>
         <div class="nav-links">
             <a href="/">HOME</a>
-            <a href="/cars">CARS</a>
             <a href="/register">REGISTER</a>
             <button class="sign-in-btn" style="background-color: white; color: #8B0000; border: 2px solid #8B0000;">SIGN IN</button>
         </div>

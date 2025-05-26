@@ -15,7 +15,7 @@
         </div>
         <div class="nav-links">
             <a href="/dashboard">HOME</a>
-            <a href="#" class="active">RENTAL</a>
+            <a href="/cars">CARS</a>
         </div>
     </nav>
 
