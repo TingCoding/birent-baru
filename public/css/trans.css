@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #8B0000, #4B0000);
+    min-height: 100vh;
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px);
+    padding: 40px 20px;
+}
+
+.transaction-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+.transaction-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #8B0000;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+    text-align: center;
+    color: #666;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #8B0000;
+}
+
+.form-input::placeholder {
+    color: #999;
+}
+
+.payment-section {
+    margin: 10px 0;
+}
+
+.total-payment-label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.total-amount {
+    font-size: 24px;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.pay-btn {
+    background-color: #8B0000;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    min-width: 100px;
+}
+
+.pay-btn:hover {
+    background-color: #A52A2A;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .transaction-container {
+        padding: 30px 20px;
+        margin: 0 10px;
+    }
+
+    .transaction-title {
+        font-size: 24px;
+    }
+
+    .total-amount {
+        font-size: 20px;
+    }
+}
