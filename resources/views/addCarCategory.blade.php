@@ -44,7 +44,7 @@
                 @endif
 
                 <div class="form-group">
-                    <label for="Name" class="form-label">Car Category Name</label>
+                    <label for="Name" class="form-label">Car Category Name *</label>
                     <input type="text" class="form-input" name="Name" id="Name" placeholder="Car Category Name" value="{{ old('Name') }}" required>
                     @error('Name')
                         <p style="color: red;">{{ $message }}</p>

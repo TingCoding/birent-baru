@@ -53,7 +53,7 @@
                 
                 @if($car)
                     <div class="form-group">
-                        <label>Selected Car</label>
+                        <label>Selected Car *</label>
                         <input type="text" class="form-input" value="{{ $car->Name }}" readonly>
                     </div>
                 @endif

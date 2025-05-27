@@ -32,7 +32,7 @@ class UserSeeder extends Seeder
             'name' => 'Juan',
             'email' => 'juan@gmail.com',
             'password' => 'juan1234',
-            'role' => 'admin'
+            'role' => 'user'
         ]);
     }
 }

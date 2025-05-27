@@ -44,7 +44,7 @@
                 @endif
 
                 <div class="form-group">
-                    <label for="Name" class="form-label">Car Name</label>
+                    <label for="Name" class="form-label">Car Name *</label>
                     <input type="text" class="form-input" name="Name" id="Name" placeholder="Car Name" value="{{ old('Name') }}" required>
                     @error('Name')
                         <p style="color: red;">{{ $message }}</p>
@@ -52,7 +52,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="Subtitle" class="form-label">Car Subtitle</label>
+                    <label for="Subtitle" class="form-label">Car Subtitle *</label>
                     <input type="text" class="form-input" name="Subtitle" id="Subtitle" placeholder="Subtitle" value="{{ old('Subtitle') }}" required>
                     @error('Subtitle')
                         <p style="color: red;">{{ $message }}</p>
@@ -60,7 +60,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="CategoryId" class="form-label">Category</label>
+                    <label for="CategoryId" class="form-label">Category *</label>
                     <select name="CategoryId" id="CategoryId" class="form-input" required onchange="updateCategoryName()">
                         <option value="">Select Category</option>
                         @foreach($categories as $category)
@@ -80,7 +80,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="Passengers" class="form-label">Passengers</label>
+                    <label for="Passengers" class="form-label">Passengers *</label>
                     <input type="number" class="form-input" name="Passengers" id="Passengers" placeholder="Passengers" value="{{ old('Passengers') }}" min="1" required>
                     @error('Passengers')
                         <p style="color: red;">{{ $message }}</p>
@@ -88,7 +88,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="Seats" class="form-label">Seats</label>
+                    <label for="Seats" class="form-label">Seats *</label>
                     <input type="number" class="form-input" name="Seats" id="Seats" placeholder="Seats" value="{{ old('Seats') }}" min="1" required>
                     @error('Seats')
                         <p style="color: red;">{{ $message }}</p>
@@ -96,7 +96,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="Bags" class="form-label">Bags</label>
+                    <label for="Bags" class="form-label">Bags *</label>
                     <input type="number" class="form-input" name="Bags" id="Bags" placeholder="Bags" value="{{ old('Bags') }}" min="0" required>
                     @error('Bags')
                         <p style="color: red;">{{ $message }}</p>
@@ -104,7 +104,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="Luggages" class="form-label">Luggages</label>
+                    <label for="Luggages" class="form-label">Luggages *</label>
                     <input type="number" class="form-input" name="Luggages" id="Luggages" placeholder="Luggages" value="{{ old('Luggages') }}" min="0" required>
                     @error('Luggages')
                         <p style="color: red;">{{ $message }}</p>
@@ -112,7 +112,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="Price" class="form-label">Price</label>
+                    <label for="Price" class="form-label">Price *</label>
                     <input type="number" class="form-input" name="Price" id="Price" placeholder="Price" value="{{ old('Price') }}" min="0" required>
                     @error('Price')
                         <p style="color: red;">{{ $message }}</p>
@@ -120,7 +120,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="Description" class="form-label">Description</label>
+                    <label for="Description" class="form-label">Description *</label>
                     <textarea class="form-input" name="Description" id="Description" placeholder="Description" rows="4" required>{{ old('Description') }}</textarea>
                     @error('Description')
                         <p style="color: red;">{{ $message }}</p>
@@ -128,7 +128,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="Photo" class="form-label">Photo</label>
+                    <label for="Photo" class="form-label">Photo *</label>
                     <input type="file" class="form-input" name="Photo" id="Photo" accept="image/*" required>
                     <small style="color: #666; font-size: 12px;">Accepted formats: JPEG, PNG, JPG, GIF. Max size: 2MB</small>
                     @error('Photo')
