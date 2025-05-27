@@ -28,6 +28,10 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('/tracking', function () {
+    return view('tracking');
+});
+
 // Transaction routes - harus dalam middleware auth
 Route::middleware('auth')->group(function () {
     Route::get('/transaction/{id}', [TransactionController::class, 'createTransaction'])->name('transaction.create');

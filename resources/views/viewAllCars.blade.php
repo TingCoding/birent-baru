@@ -325,6 +325,9 @@ h1 {
                                                     Delete
                                                 </button>
                                             </form>
+                                            <div class="ubah-btn" style="display: flex; justify-content: center; align-items: center;">
+                                                <a href="/tracking" style="font-size: 13px">Tracking</a>
+                                            </div>
                                         </div>
                                     @endif
                                 </div>
